@@ -1,0 +1,22 @@
+/* styles */
+/* called by the view template */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#instructions header h1 {
+  color: red;
+}
+#instructions main h2 {
+  color: darkred;
+}
+#instructions footer h3 {
+  color: black;
+}
+#results header h1 { /* a.k.a #dynaput */
+  color: black;
+}
