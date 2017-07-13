@@ -1,0 +1,46 @@
+<!-- This is a static file -->
+<!-- served from the routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="description" content="FCC #11">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <div id="instructions" style="display: none;">
+      <header>
+        <h1>
+          Hi, my name is John.
+        </h1>
+      </header>
+      <main>
+        <h2>
+          Welcome to my timestamper microservice!
+        </h2>
+      </main>
+      <footer>
+        <h3>
+          Append any time whether it is formatted to unix (e.g. 123456789) or natural (e.g. January 1, 2000)
+          <br>to the end of the website url with a trailing slash (e.g. fcc-project-11.glitch.me/
+          <a style="text-decoration: underline;">INPUT</a>).
+        </h3>
+      </footer>
+    </div>
+    
+    <div id="results" style="display: none;">
+      <header>
+        <h1 id="dynaput">
+          <!-- Object output goes here -->
+        </h1>
+      </header>
+    </div>
+  </body>
+  
+  <script type="text/javascript" src="/client.js"></script>
+  
+</html>
