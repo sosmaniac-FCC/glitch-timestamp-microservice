@@ -35,7 +35,7 @@ $(function() { // short-hand for jquery .ready method
       if(path.length == 1 &&
         isNaN(parseInt(path[0])) == false) {
         // unix unput
-        alert('1');
+        // alert('1');
         object.unix = parseInt(path[0]);
         date = new Date(parseInt(path[0]) * 1000);
         object.natural = months[date.getMonth() + 1] + ' ' + date.getDate() + ', ' + date.getFullYear(); 
@@ -47,7 +47,7 @@ $(function() { // short-hand for jquery .ready method
                isNaN(parseInt(path[1])) == false &&
                isNaN(parseInt(path[2])) == false) {   
         // natural input 
-        alert('2');
+        // alert('2');
         date = new Date(months.indexOf(path[0].toLowerCase()) + '/' + path[1] + '/' + path[2]);
         object.unix = date.getTime() / 1000;
         object.natural = path[0].toLowerCase() + ' ' + path[1] + ', ' + path[2];
@@ -56,12 +56,12 @@ $(function() { // short-hand for jquery .ready method
         
       } else if(path.join('') == '') {
         // blank input
-        alert('3');
+        // alert('3');
         inst.style.display = 'block';
         
       } else {
         // null input
-        alert('4');
+        // alert('4');
         resu.style.display = 'block';
         output.innerHTML = 'UNIX: ' + object.unix + ' || NATURAL: ' + object.natural;
       }
